@@ -23,11 +23,11 @@ public class MyHomeworkProjectOneApplication {
 	public CommandLineRunner demo(IRedArmyRepository repository) {
 		return (args) -> {
 			// save a couple of customers
-			repository.save(new RedArmyVolunteer("Michael", "Smith", "Vladivlostock"));
-			repository.save(new RedArmyVolunteer("Aaron", "Moon", "Moscow"));
-			repository.save(new RedArmyVolunteer("Kim", "Lassiter", "Stalingrad"));
-			repository.save(new RedArmyVolunteer("Joan", "Daniels", "Leningrad"));
-			repository.save(new RedArmyVolunteer("Eric", "Patterson", "St. Petersburg"));
+			repository.save(new RedArmyVolunteer("Artyom", "Chyornyj", "Moscow"));
+			repository.save(new RedArmyVolunteer("Leon", "Trotsky ", "Ukraine"));
+			repository.save(new RedArmyVolunteer("Vladimir", "Lenin", "St. Petersburg"));
+			repository.save(new RedArmyVolunteer("Nadezhda", "Krupskaya ", "Vadivlostock"));
+			repository.save(new RedArmyVolunteer("Bella", "Akhmadulina", "Stalingrad"));
 
 			// read all customers
 			log.info("Customers found with findAll():");
@@ -47,9 +47,9 @@ public class MyHomeworkProjectOneApplication {
 				});
 
 			// read customers by last name
-			log.info("Customer found with findByLastName('Patterson'):");
+			log.info("Customer found with findByLastName('Trotsky'):");
 			log.info("--------------------------------------------");
-			repository.findByLastName("Patterson").forEach(bauer -> {
+			repository.findByLastName("Trotsky").forEach(bauer -> {
 				log.info(bauer.toString());
 			});
 			
