@@ -30,7 +30,7 @@ public class MyHomeworkProjectOneApplication {
 			repository.save(new RedArmyVolunteer("Bella", "Akhmadulina", "Stalingrad"));
 
 			// read all customers
-			log.info("Customers found with findAll():");
+			log.info("Volunteers found with findAll():");
 			log.info("-------------------------------");
 			for (RedArmyVolunteer volunteer : repository.findAll()) {
 				log.info(volunteer.toString());
@@ -40,14 +40,14 @@ public class MyHomeworkProjectOneApplication {
 			// read an individual customer by ID
 			repository.findById(1L)
 				.ifPresent(volunteer -> {
-					log.info("Customer found with findById(1L):");
+					log.info("Volunteer found with findById(1L):");
 					log.info("--------------------------------");
 					log.info(volunteer.toString());
 					log.info("");
 				});
 
 			// read customers by last name
-			log.info("Customer found with findByLastName('Trotsky'):");
+			log.info("Volunteer found with findByLastName('Trotsky'):");
 			log.info("--------------------------------------------");
 			repository.findByLastName("Trotsky").forEach(bauer -> {
 				log.info(bauer.toString());
