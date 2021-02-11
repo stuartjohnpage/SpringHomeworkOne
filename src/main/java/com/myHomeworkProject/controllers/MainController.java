@@ -1,4 +1,4 @@
-package com.tts.myHomeworkProject.controllers;
+package com.myHomeworkProject.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +8,6 @@ public class MainController {
 
 	@RequestMapping("/")
 	public String home() {
-		return "Welcome, glorious Red Army 'volunteers'! Are you ready to fight for Mother Russia?";
+		return "My very own project! Welcome, glorious Red Army 'volunteers'! Are you ready to fight for Mother Russia?";
 	}
 }

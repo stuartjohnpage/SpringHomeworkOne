@@ -1,4 +1,4 @@
-package com.tts.myHomeworkProject;
+package com.myHomeworkProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 
-import com.tts.myHomeworkProject.domain.RedArmyVolunteer;
-import com.tts.myHomeworkProject.repository.IRedArmyRepository;
+import com.myHomeworkProject.domain.RedArmyVolunteer;
+import com.myHomeworkProject.repository.IRedArmyRepository;
 
 @SpringBootApplication
 public class MyHomeworkProjectOneApplication {

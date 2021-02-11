@@ -1,4 +1,4 @@
-package com.tts.myHomeworkProject.domain;
+package com.myHomeworkProject.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
